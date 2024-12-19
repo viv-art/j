@@ -169,8 +169,8 @@ nav ul li a:hover {
     width: 100%;
     /* Full screen width */
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    /* justify-content: end;
+    align-items: end; */
     z-index: 999;
     transition: opacity 0.3s ease;
 }
@@ -187,8 +187,8 @@ nav ul li a:hover {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    /* justify-content: end;
+    align-items: end; */
     padding-left: 30px;
 }
 
