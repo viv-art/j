@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Animation Gradient Border with Static Text</title>
+
+</head>
+<style>
+    #moving-text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: 100%;
+        font-size: 78px;
+        font-weight: bold;
+        color: black;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        pointer-events: none;
+        z-index: 100;
+        overflow: hidden;
+    }
+
+    .text-wrapper {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .text1 {
+        display: flex;
+        gap: 4rem;
+        /* position: absolute; */
+        width: max-content;
+        animation: moveTextAcrossScreen 20s linear infinite;
+    }
+
+    .text1 .col1,
+    .text1 .col2 {
+        background: plum;
+        color: plum;
+        border-radius: 50%;
+        padding: 100px;
+    }
+
+    @keyframes moveTextAcrossScreen {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    /*
+    
+
+    */
+</style>
+
+<body>
+    <div id="moving-text">
+        <div class="text-wrapper">
+            <div class="text1">
+                <div class="col2"></div>
+                <h1>Motion Graphics</h1>
+                <div class="col1"></div>
+                <h1>Creative Direction</h1>
+                <div class="col2"></div>
+                <h1>End to End Production</h1>
+                <div class="col1"></div>
+            </div>
+        </div>
+    </div>
+    <div id="video-containero" class="video-containero">
+        <video autoplay muted loop>
+            <source src="1110378501-preview.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    hii
+
+</body>
+
+</html>
