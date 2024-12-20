@@ -1,5 +1,5 @@
 * {
-    /* font-family: 'Poppins', sans-serif; */
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,14 +12,27 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-/* body {
-    font-family: 'Raleway', sans-serif;
-    
-} */
-body:active,
-body:focus {
+html,
+body {
+    overscroll-behavior: none;
+
+}
+
+
+/* body:active {
     background: inherit;
-    /* Prevent any unexpected background color */
+
+} */
+
+@keyframes exampleAnimation {
+    0% {
+        background-color: #000;
+
+    }
+
+    100% {
+        background-color: #000;
+    }
 }
 
 body {
@@ -28,14 +41,16 @@ body {
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    /* Removes focus outline */
+
     -webkit-tap-highlight-color: transparent;
 }
 
 *:focus {
     outline: none;
-    /* Removes focus outline for all elements */
+
 }
+
+
 
 .container {
     max-width: 1300px;
