@@ -1787,10 +1787,60 @@ video {
    
 } */
 
-
-
-
 #moving-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-size: 78px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+    z-index: 100;
+    overflow: hidden;
+
+}
+
+.text-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Ensure no wrapping occurs */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.text1 {
+    display: flex;
+    gap: 4rem;
+    flex-shrink: 0;
+    /* Prevent shrinking */
+    animation: moveTextAcrossScreen 20s linear infinite;
+    align-items: center;
+    /* Center items vertically if needed */
+}
+
+.text1 .col1,
+.text1 .col2 {
+    background: plum;
+    color: plum;
+    border-radius: 50%;
+    padding: 100px;
+}
+
+@keyframes moveTextAcrossScreen {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* #moving-text {
     position: absolute;
 
     left: 0;
@@ -1810,8 +1860,7 @@ video {
 }
 
 .text1 .col1 {
-    /* width: 250px;
-    height: 250px; */
+    
     background: plum;
     color: plum;
     border-radius: 50%;
@@ -1819,8 +1868,7 @@ video {
 }
 
 .text1 .col2 {
-    /* width: 250px;
-    height: 150px; */
+    
     background: plum;
     color: plum;
     padding: 100px;
@@ -1844,33 +1892,32 @@ video {
     to {
         transform: translateX(100%);
     }
-}
+} */
 
 
 @media screen and (max-width: 1112px) {
 
     #moving-text {
-        position: absolute;
+        /* position: absolute;
 
         left: 0;
         right: 0;
         text-align: center;
-        width: 100%;
+        width: 100%; */
 
         font-size: 68px;
-        font-weight: bold;
+        /* font-weight: bold;
         color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         white-space: nowrap;
         animation: moveTextAcrossScreen 20s linear infinite;
         pointer-events: none;
-        z-index: 100;
+        z-index: 100; */
 
     }
 
     .text1 .col1 {
-        /* width: 250px;
-        height: 250px; */
+
         background: plum;
         color: plum;
         border-radius: 50%;
@@ -1887,12 +1934,12 @@ video {
     }
 
 
-    .text1 {
+    /* .text1 {
         display: flex;
         gap: 4rem;
         position: fixed;
         left: -100%;
-    }
+    } */
 
     .video-containero video {
         width: 500px;
@@ -2392,21 +2439,21 @@ video {
     }
 
     #moving-text {
-        position: absolute;
+        /* position: absolute;
 
         left: 0;
         right: 0;
         text-align: center;
-        width: 100%;
+        width: 100%; */
 
         font-size: 58px;
-        font-weight: bold;
+        /* font-weight: bold;
         color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         white-space: nowrap;
         animation: moveTextAcrossScreen 20s linear infinite;
         pointer-events: none;
-        z-index: 100;
+        z-index: 100; */
 
     }
 
@@ -3044,21 +3091,21 @@ video {
 
 
     #moving-text {
-        position: absolute;
+        /* position: absolute;
 
         left: 0;
         right: 0;
         text-align: center;
-        width: 100%;
+        width: 100%; */
 
         font-size: 45px;
-        font-weight: bold;
+        /* font-weight: bold;
         color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         white-space: nowrap;
         animation: moveTextAcrossScreen 20s linear infinite;
         pointer-events: none;
-        z-index: 100;
+        z-index: 100; */
 
     }
 
@@ -3080,21 +3127,21 @@ video {
 @media screen and (max-width: 380px) {
 
     #moving-text {
-        position: absolute;
+        /* position: absolute;
 
         left: 0;
         right: 0;
         text-align: center;
-        width: 100%;
+        width: 100%; */
 
         font-size: 28px;
-        font-weight: bold;
+        /* font-weight: bold;
         color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         white-space: nowrap;
         animation: moveTextAcrossScreen 20s linear infinite;
         pointer-events: none;
-        z-index: 100;
+        z-index: 100; */
 
     }
 
@@ -3373,21 +3420,21 @@ video {
     }
 
     #moving-text {
-        position: absolute;
+        /* position: absolute;
 
         left: 0;
         right: 0;
         text-align: center;
-        width: 100%;
+        width: 100%; */
 
         font-size: 30px;
-        font-weight: bold;
+        /* font-weight: bold;
         color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         white-space: nowrap;
         animation: moveTextAcrossScreen 20s linear infinite;
         pointer-events: none;
-        z-index: 100;
+        z-index: 100; */
 
     }
 
