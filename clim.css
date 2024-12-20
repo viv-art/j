@@ -1833,6 +1833,7 @@ video {
     gap: 4rem;
     position: fixed;
     left: -100%;
+    width: 100%;
 }
 
 @keyframes moveTextAcrossScreen {
