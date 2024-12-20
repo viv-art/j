@@ -9,18 +9,32 @@
     scroll-behavior: smooth;
 
     color: white;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* body {
     font-family: 'Raleway', sans-serif;
     
 } */
+body:active,
+body:focus {
+    background: inherit;
+    /* Prevent any unexpected background color */
+}
 
 body {
     background-color: black;
     color: white;
     cursor: pointer;
     overflow: hidden;
+    outline: none;
+    /* Removes focus outline */
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+    /* Removes focus outline for all elements */
 }
 
 .container {
