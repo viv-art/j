@@ -12,29 +12,34 @@
         position: absolute;
         left: 0;
         right: 0;
-        text-align: center;
         width: 100%;
         font-size: 78px;
         font-weight: bold;
-        color: black;
+        color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         pointer-events: none;
         z-index: 100;
         overflow: hidden;
+        /* Ensures text doesn’t overflow the container */
     }
 
     .text-wrapper {
-        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        /* Ensure no wrapping occurs */
         width: 100%;
         overflow: hidden;
+        position: relative;
     }
 
     .text1 {
         display: flex;
         gap: 4rem;
-        /* position: absolute; */
-        width: max-content;
-        animation: moveTextAcrossScreen 20s linear infinite;
+        flex-shrink: 0;
+        /* Prevent shrinking */
+        animation: moveTextAcrossScreen 10s linear infinite;
+        align-items: center;
+        /* Center items vertically if needed */
     }
 
     .text1 .col1,
@@ -47,23 +52,28 @@
 
     @keyframes moveTextAcrossScreen {
         from {
-            transform: translateX(100%);
+            transform: translateX(0);
         }
 
         to {
             transform: translateX(-100%);
         }
     }
-
-    /*
-    
-
-    */
 </style>
 
 <body>
     <div id="moving-text">
         <div class="text-wrapper">
+            <div class="text1">
+                <div class="col2"></div>
+                <h1>Motion Graphics</h1>
+                <div class="col1"></div>
+                <h1>Creative Direction</h1>
+                <div class="col2"></div>
+                <h1>End to End Production</h1>
+                <div class="col1"></div>
+            </div>
+            <!-- Duplicate the content -->
             <div class="text1">
                 <div class="col2"></div>
                 <h1>Motion Graphics</h1>
@@ -81,7 +91,78 @@
             Your browser does not support the video tag.
         </video>
     </div>
-    hii
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae.v Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae.vv Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae.v Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae.v Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae.vv Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae.v Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae. Lorem ipsum dolor sit,
+    amet consectetur adipisicing elit. Est commodi animi eos labore tenetur quasi quis earum! Vel
+    adipisci id et deserunt mollitia possimus nihil quo, voluptatum, provident, suscipit quae.
 
 </body>
 
